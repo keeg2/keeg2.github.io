@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="keeg">
 <meta property="og:description" content="1、CommonUtils有两个方法：（1）uuid()：此方法可以随机获得32位长的字符串，主要用来做id和激活码，因为它获得的字符串是不重复的。（2）toBean()：此方法作用是将map中的数据封装到javabean中。首先要创建一个Map map = new HashMap(); 往map里增加数据，这前提还需要创建一个类，此类的属性必须要与map中的key相对应，才能完成映射关系，然后再">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-07-23T10:50:11.095Z">
+<meta property="og:updated_time" content="2017-07-23T16:05:27.764Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java web开发之小工具CommonUtils、JdbcUtils">
 <meta name="twitter:description" content="1、CommonUtils有两个方法：（1）uuid()：此方法可以随机获得32位长的字符串，主要用来做id和激活码，因为它获得的字符串是不重复的。（2）toBean()：此方法作用是将map中的数据封装到javabean中。首先要创建一个Map map = new HashMap(); 往map里增加数据，这前提还需要创建一个类，此类的属性必须要与map中的key相对应，才能完成映射关系，然后再">
@@ -176,8 +176,24 @@
       
         <h3 id="1、CommonUtils"><a href="#1、CommonUtils" class="headerlink" title="1、CommonUtils"></a>1、CommonUtils</h3><p>有两个方法：<br>（1）uuid()：此方法可以随机获得32位长的字符串，主要用来做id和激活码，因为它获得的字符串是不重复的。<br>（2）toBean()：此方法作用是将map<key,value>中的数据封装到javabean中。首先要创建一个Map<string, object=""> map = new HashMap<string ,object="">(); 往map里增加数据，这前提还需要创建一个类，此类的<br>属性必须要与map中的key相对应，才能完成映射关系，然后再通过toBean()方法讲map中的数据封装到javabean中。</string></string,></key,value></p>
 <h3 id="2、JdbcUtils"><a href="#2、JdbcUtils" class="headerlink" title="2、JdbcUtils"></a>2、JdbcUtils</h3><p>JdbcUtils作用是获取Connection连接，还有就是可以提供事务的相关功能。<br>有几个条件：<br>（1）需要mysql驱动的jar包，例如：mysql-connector-java-5.1.13-bin.jar<br>（2）底层使用了c3p0连接池，所以需要c3p0相关的jar包，例如：c3p0-0.9.2-pre1.jar ，mchange-commons-0.2.jar ，还需要c3p0的配置文件，例如：c3p0-config.xml</p>
-<p>通过getConnection()方法获取Connection对象： Connection con = JdbcUtils.getConnection();<br>使用完要关闭Connection对象： JdbcUtils.releaseConnection(con);  此方法是选择性关闭，如果当前连接对象与事务相关，它就不关闭；如果当前连接对象与实务无关，它就关闭。<br>isClosed()方法是查看Connection对象是否已被关闭，返回false表示没有关闭；返回true表示已经关闭。</p>
+<p>获取Connection连接：<a id="more"></a><br>通过getConnection()方法获取Connection对象： Connection con = JdbcUtils.getConnection();<br>使用完要关闭Connection对象： JdbcUtils.releaseConnection(con);  此方法是选择性关闭，如果当前连接对象与事务相关，它就不关闭；如果当前连接对象与实务无关，它就关闭。<br>isClosed()方法是查看Connection对象是否已被关闭，返回false表示没有关闭；返回true表示已经关闭。</p>
+<p>事务：</p>
+<pre><code>//public void testTransaction(){
+    try{
+        JdbcUtils.beginTransaction();    //开启事务
 
+        多次操作
+
+        JdbcUtils.commitTransaction();    //提交事务
+    }catch(Exception e){
+        try{
+            JdbcUtils.rollbackTranscation();    //事务回滚
+        }catch(SQLException e1){
+
+        }
+    }
+}
+</code></pre>
       
 
       
