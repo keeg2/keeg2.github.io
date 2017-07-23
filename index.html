@@ -57,7 +57,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -65,10 +65,6 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -81,7 +77,7 @@
 				
 					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="weibo" target="_blank" href="http://weibo.com/" title="weibo"><i class="icon-weibo"></i></a>
 		        
 					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 		        
@@ -124,7 +120,7 @@
 					
 						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="weibo" target="_blank" href="http://weibo.com/" title="weibo"><i class="icon-weibo"></i></a>
 			        
 						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 			        
@@ -139,7 +135,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 50%"><a href="/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -178,32 +174,10 @@
       
         <h3 id="1、node-js的下载安装"><a href="#1、node-js的下载安装" class="headerlink" title="1、node.js的下载安装"></a>1、node.js的下载安装</h3><p><a href="https://nodejs.org/en/download/" target="_blank" rel="external">node.js的下载</a>很简单，自己百度<code>node.js</code>官网下载，根据自己的电脑系统下载相对应的版本即可，我这里讲的是<br><code>Windows64位</code>系统的。下载按直接运行安装就行了，跟安装其他软件是一样的。</p>
 <h3 id="2、Git的下载安装"><a href="#2、Git的下载安装" class="headerlink" title="2、Git的下载安装"></a>2、Git的下载安装</h3><p><a href="https://git-scm.com/downloads" target="_blank" rel="external">Git的下载</a>也很简单，百度<code>git</code>官网然后下载，根据自己的电脑系统下载相对应的版本即可，我这里讲的是<br><code>Windows64位</code>系统的。下载完成，直接运行，然后下一步，基本上不需要修改什么，直到安装完成，可以参考一下这里的安装步骤：<a href="http://blog.csdn.net/renfufei/article/details/41647875" target="_blank" rel="external">http://blog.csdn.net/renfufei/article/details/41647875</a></p>
-<p>以上两项安装按成之后，开始安装<code>hexo</code>，在桌面或其他盘位置，点击鼠标右键，选择<code>Git Bash Here</code> ，在命令行输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo</div></pre></td></tr></table></figure></p>
-<h3 id="3、创建hexo文件夹"><a href="#3、创建hexo文件夹" class="headerlink" title="3、创建hexo文件夹"></a>3、创建hexo文件夹</h3><p>随便选择一个盘，创建一个文件夹名为：<code>hexo</code>  例如我这里是在<code>F盘</code>下创建<code>F:\hexo</code> 然后在此目录下点击鼠标右键，选择<code>Git Bash Here</code> ,执行以下命令，<code>hexo</code>会自动在此目录下创建网站需要的所有文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div></pre></td></tr></table></figure></p>
-<h3 id="4、安装依赖包"><a href="#4、安装依赖包" class="headerlink" title="4、安装依赖包"></a>4、安装依赖包</h3><p>执行以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install</div></pre></td></tr></table></figure></p>
-<p>等执行完毕后，本地的<code>hexo</code>就搭建好了。再执行以下两条命令就可以用浏览器在本地查看我们的<code>hexo</code>博客了。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div><div class="line">$ hexo server</div></pre></td></tr></table></figure></p>
-<p><code>hexo generate</code> 可以简写成：<code>hexo g</code><br><code>hexo server</code> 可以简写成：<code>hexo s</code></p>
-<p>现在可以打开浏览器输入网址：<code>localhost:4000</code> 就可以查看本地的<code>hexo</code>了，但是这里只能本地查看哦，别人是看不到的，需要部署到<code>GitHub</code>上，他人才能在网上访问你的<code>hexo</code></p>
-<hr>
-<h2 id="二、把Hexo部署到GitHub上，如何部署呢？"><a href="#二、把Hexo部署到GitHub上，如何部署呢？" class="headerlink" title="二、把Hexo部署到GitHub上，如何部署呢？"></a>二、把Hexo部署到GitHub上，如何部署呢？</h2><h3 id="1、注册GitHub账号"><a href="#1、注册GitHub账号" class="headerlink" title="1、注册GitHub账号"></a>1、注册GitHub账号</h3><p>百度打开<code>GitHub</code>官网，点击右上角<code>Sign up</code> 注册账号，填写用户名<code>Username</code>，邮箱<code>Email Address</code>，密码<code>Password</code>，填写用户名和邮箱的时候系统会自动检测是否已被占用，如果被占用就不能使用了，填写好之后点击<code>Create an account</code> 注册，注册成功之后还要到你填的邮箱去验证一下就可以了。</p>
-<h3 id="2、配置SSH-keys"><a href="#2、配置SSH-keys" class="headerlink" title="2、配置SSH keys"></a>2、配置SSH keys</h3><p>配置<code>SSH keys</code>可以参考这里的步骤：<a href="http://jingyan.baidu.com/article/a65957f4e91ccf24e77f9b11.html" target="_blank" rel="external">http://jingyan.baidu.com/article/a65957f4e91ccf24e77f9b11.html</a></p>
-<p>下面我也来简单的介绍一下：</p>
-<p>生成<code>SSH key</code>： 在桌面点击右键选择<code>Git Bash Here</code> ，执行以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> ~</div><div class="line">$ ssh-keygen -t rsa -C <span class="string">"xxxxx@yy.com"</span></div></pre></td></tr></table></figure></p>
-<p><code>cd ~</code> 表示确保当前目录在<code>“ ~ ”</code>下， <code>xxxxx@yy.com</code> 代表你的邮箱，<br>Generating public/private rsa key pair.<br>Enter file in which to save the key (/c/Users/xxxx_000/.ssh/id_rsa):   <code>#不填直接回车</code><br>Enter passphrase (empty for no passphrase):   <code>#输入密码（可以为空）</code><br>Enter same passphrase again:   <code>#再次确认密码（可以为空）</code><br>Your identification has been saved in /c/Users/xxxx_000/.ssh/id_rsa.   <code>#生成的密钥</code><br>Your public key has been saved in /c/Users/xxxx_000/.ssh/id_rsa.pub.  <code>#生成的公钥</code><br>The key fingerprint is:<br>e3:51:33:xx:xx:xx:xx:xxx:61:28:83:e2:81 xxxxxx@yy.com</p>
-<p>到这里为止，本地的<code>SSH key</code>设置已经完成了，其存在的路径为：<code>C:\users\.ssh\id_rsa.pub</code> 中，打开<code>id_rsa.pub</code> 全选复制内容。<br>登录自己的<code>GitHub</code>账号，点击右上角个人中心那里，选择<code>Settings</code> ，再选择左边<code>SSH and GPG keys</code> ，增加一个新的<code>SSH key</code> ，点击<code>New SSH key</code> ，标题<code>title</code>可以随便写，把刚才复制的公钥粘贴到<code>key</code>里面，点击<code>Add SSH key</code> ，完成<code>SSH key</code>在<code>GitHub</code>上的配置。</p>
-<p>配置账户：执行以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name <span class="string">"你的用户名"</span></div><div class="line">$ git config --global user.email <span class="string">"你的邮箱地址"</span></div></pre></td></tr></table></figure></p>
-<p>测试<code>SSH key</code>是否设置成功，执行以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div></pre></td></tr></table></figure></p>
-<p>The authenticity of host ‘github.com (192.30.252.129)’ can’t be established.<br>RSA key fingerprint is 16:27:xx:xx:xx:xx:xx:4d:eb:df:a6:48.<br>Are you sure you want to continue connecting (yes/no)? yes #确认你是否继续联系，输入yes<br>Warning: Permanently added ‘github.com,192.30.252.129’ (RSA) to the list of known hosts.<br>Enter passphrase for key ‘/c/Users/xxxx_000/.ssh/id_rsa’:  #生成ssh kye是密码为空则无此项，若设置有密码则有此项，且输入生成ssh key时设置的密码即可。<br>Hi xxx! You’ve successfully authenticated, but GitHub does not provide shell access. #出现这句话，说明设置成功。</p>
-<p><code>SSH key</code>设置完成之后，创建<code>repository</code> 。</p>
-<h3 id="创建repository"><a href="#创建repository" class="headerlink" title="创建repository"></a>创建repository</h3><p>在<code>GitHub</code>个人主页上，点击右上角 <code>+</code> 号，选择 <code>New repository</code> 创建一个新的<code>repository</code>, 起个名字，我一般起名字跟我的<code>GitHub</code>名字有点关系，例如我起的一个名：<code>keeg2.github.io</code></p>
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>首先需要配置一下配置文件<code>_config.yml</code> ，此文件在你新建的<code>\hexo</code>目录下,如 <code>H:\hexo</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">	<span class="built_in">type</span>: github</div><div class="line">	repository: https://github.com/keeg2/keeg2.github.io.git</div><div class="line">	branch: master</div></pre></td></tr></table></figure></p>
-<p><code>repository</code>后面的网址一定要对应上你创建的 <code>repository</code>的名字</p>
-<p>然后执行以下命令完成部署：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div><div class="line">$ hexo deploy</div></pre></td></tr></table></figure></p>
-<p><code>hexo generate</code> 可以写成 <code>hexo g</code><br><code>hexo deploy</code> 可以写成 <code>hexo d</code></p>
-<p>到这里为止，已经成功把<code>hexo</code>部署到<code>GitHub</code>上了，现在别人也可以通过网上访问你的<code>hexo</code>了，我的网址是：<code>keeg2.github.io</code></p>
-<p>安装过程中可能会出现的一些问题：<br>1、中文出现乱码的，不要用记事本编辑，建议使用sublime text ，直接百度就可以下载安装。<br>2、<code>hexo d</code>后出现：ERROR not found :github ，那就执行以下代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
-<p>然后再试一次<code>hexo g</code> , <code>hexo d</code> 应该就没问题了。</p>
-
+<p>以上两项安装按成之后，开始安装<code>hexo</code>，在桌面或其他盘位置，点击鼠标右键，选择<code>Git Bash Here</code> ，在命令行输入
+        
+          <a class="article-more-a" href="/2017/07/22/hexo的安装和GitHub的部署/#more">more >></a>
+        
       
 
       
@@ -434,25 +408,17 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -516,43 +482,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">帅的人早已经醒了&lt;br&gt;&lt;br&gt;丑的人还在睡懒觉</div>
   	  	
     	</section>
     

@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="keeg">
 <meta property="og:description" content="1、node.js的下载安装node.js的下载很简单，自己百度node.js官网下载，根据自己的电脑系统下载相对应的版本即可，我这里讲的是Windows64位系统的。下载按直接运行安装就行了，跟安装其他软件是一样的。 2、Git的下载安装Git的下载也很简单，百度git官网然后下载，根据自己的电脑系统下载相对应的版本即可，我这里讲的是Windows64位系统的。下载完成，直接运行，然后下一步，基">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-07-23T07:31:59.206Z">
+<meta property="og:updated_time" content="2017-07-23T07:39:21.411Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一、Hexo的安装（本地安装）">
 <meta name="twitter:description" content="1、node.js的下载安装node.js的下载很简单，自己百度node.js官网下载，根据自己的电脑系统下载相对应的版本即可，我这里讲的是Windows64位系统的。下载按直接运行安装就行了，跟安装其他软件是一样的。 2、Git的下载安装Git的下载也很简单，百度git官网然后下载，根据自己的电脑系统下载相对应的版本即可，我这里讲的是Windows64位系统的。下载完成，直接运行，然后下一步，基">
@@ -61,7 +61,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -69,10 +69,6 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -85,7 +81,7 @@
 				
 					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="weibo" target="_blank" href="http://weibo.com/" title="weibo"><i class="icon-weibo"></i></a>
 		        
 					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 		        
@@ -128,7 +124,7 @@
 					
 						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="weibo" target="_blank" href="http://weibo.com/" title="weibo"><i class="icon-weibo"></i></a>
 			        
 						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 			        
@@ -143,7 +139,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 50%"><a href="/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -180,7 +176,7 @@
       
         <h3 id="1、node-js的下载安装"><a href="#1、node-js的下载安装" class="headerlink" title="1、node.js的下载安装"></a>1、node.js的下载安装</h3><p><a href="https://nodejs.org/en/download/" target="_blank" rel="external">node.js的下载</a>很简单，自己百度<code>node.js</code>官网下载，根据自己的电脑系统下载相对应的版本即可，我这里讲的是<br><code>Windows64位</code>系统的。下载按直接运行安装就行了，跟安装其他软件是一样的。</p>
 <h3 id="2、Git的下载安装"><a href="#2、Git的下载安装" class="headerlink" title="2、Git的下载安装"></a>2、Git的下载安装</h3><p><a href="https://git-scm.com/downloads" target="_blank" rel="external">Git的下载</a>也很简单，百度<code>git</code>官网然后下载，根据自己的电脑系统下载相对应的版本即可，我这里讲的是<br><code>Windows64位</code>系统的。下载完成，直接运行，然后下一步，基本上不需要修改什么，直到安装完成，可以参考一下这里的安装步骤：<a href="http://blog.csdn.net/renfufei/article/details/41647875" target="_blank" rel="external">http://blog.csdn.net/renfufei/article/details/41647875</a></p>
-<p>以上两项安装按成之后，开始安装<code>hexo</code>，在桌面或其他盘位置，点击鼠标右键，选择<code>Git Bash Here</code> ，在命令行输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo</div></pre></td></tr></table></figure></p>
+<p>以上两项安装按成之后，开始安装<code>hexo</code>，在桌面或其他盘位置，点击鼠标右键，选择<code>Git Bash Here</code> ，在命令行输入 <a id="more"></a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo</div></pre></td></tr></table></figure></p>
 <h3 id="3、创建hexo文件夹"><a href="#3、创建hexo文件夹" class="headerlink" title="3、创建hexo文件夹"></a>3、创建hexo文件夹</h3><p>随便选择一个盘，创建一个文件夹名为：<code>hexo</code>  例如我这里是在<code>F盘</code>下创建<code>F:\hexo</code> 然后在此目录下点击鼠标右键，选择<code>Git Bash Here</code> ,执行以下命令，<code>hexo</code>会自动在此目录下创建网站需要的所有文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div></pre></td></tr></table></figure></p>
 <h3 id="4、安装依赖包"><a href="#4、安装依赖包" class="headerlink" title="4、安装依赖包"></a>4、安装依赖包</h3><p>执行以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install</div></pre></td></tr></table></figure></p>
 <p>等执行完毕后，本地的<code>hexo</code>就搭建好了。再执行以下两条命令就可以用浏览器在本地查看我们的<code>hexo</code>博客了。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div><div class="line">$ hexo server</div></pre></td></tr></table></figure></p>
@@ -218,7 +214,7 @@
             <span class="tooltip-content">
               <span class="tooltip-text">
                 <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢老板<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
                     
@@ -385,25 +381,17 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -467,43 +455,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">帅的人早已经醒了&lt;br&gt;&lt;br&gt;丑的人还在睡懒觉</div>
   	  	
     	</section>
     
